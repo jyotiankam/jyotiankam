@@ -12,6 +12,7 @@ title: ""
 <link rel="apple-touch-icon" href="/images/JG_transparent.png" >
 
 MPH Candidate in Biostatistics <br>
+[Department of Biostatistics](https://www.mailman.columbia.edu/become-student/departments/biostatistics)
 Columbia University Mailman School of Public Health
 
 <br><img src="images/jyoti.png" alt="jyoti" style="width:40%; border:10px solid"><br>
