@@ -1,0 +1,58 @@
+---
+title: ""
+---
+<br>
+</br>
+<center>
+
+## Jyoti Ankam, M.B.B.S
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+<link rel="apple-touch-icon" href="/images/JG_transparent.png" >
+
+MPH Candidate in Biostatistics <br>
+Columbia University Mailman School of Public Health
+
+<br><img src="images/jyoti.png" alt="jyoti" style="width:40%; border:10px solid"><br>
+
+
+#### About
+
+Skilled medical doctor with a broad range of healthcare experiences, both urban and rural, national and international. Objective: Currently pursuing a career in Biostatistics to build expertise in health data collection, statistical analysis and interpretation. Possess strong critical/analytical skills and can handle real-world problems with tact.
+
+
+#### Skills
+
+
+Clinical Medicine |
+Data Analysis |
+Clinical Research |
+R Programming |
+SAS programming |
+Microsoft Office
+
+
+#### Education
+
+Sep’17 – May’19
+
+Master of Public Health Candidate – Biostatistics | Columbia University Joseph L. Mailman School of Public Health, NY, U.S.A
+
+Certificate – Advanced Epidemiology
+
+Sep '08 – Oct’14
+
+Bachelor of Medicine and Bachelor of Surgery (M.B.B.S.) | Maharashtra University of Health Sciences (MUHS), Nashik, India
+
+First Class Honors
+<br>
+
+#### Contact Information
+
+50 Haven Avenue, B109, New York, 10032
+[LinkedIn](www.linkedin.com/in/jyoti-a-393966140)
+Email: [jva2106@cumc.columbia.edu](mailto:jva2106@cumc.columbia.edu)  
+Phone: +1-929-302-6226
+
+</center>

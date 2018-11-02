@@ -1,0 +1,84 @@
+---
+title: "Instacart data"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(p8105.datasets)
+library(tidyverse)
+library(viridis)
+library(plotly) 
+library(chron)
+
+```
+
+```{r}
+data("instacart")
+data("ny_noaa")
+
+ny_noaa_df = ny_noaa %>% 
+  mutate(month = months.Date(date),
+         day = chron::days(date),
+         year = chron::years(date),
+         tmax = (as.numeric(tmax))/10,
+         tmin = (as.numeric(tmin))/10,
+         prcp = prcp/10)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+x = instacart %>%
+  sample_n(100000) %>% 
+  group_by(aisle_id, aisle) %>% 
+  summarise(number = n()) %>% 
+  arrange(desc(number)) %>% 
+  mutate(aisle = tools::toTitleCase(aisle)) %>% 
+  ggplot(aes(x = reorder(aisle, -number), y = number, fill = aisle)) +
+  geom_col() +
+  theme(axis.text.x = element_text(angle = 85, hjust = 1, size = 8),
+        legend.position = "none") +
+  labs(
+    title = "Frequency distribution of aisle orders",
+    x = "Aisle",
+    y = "Number of orders",
+    caption = "Instacart Data 2017"
+  )
+  
+ggplotly(x)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+my_boxplot = ny_noaa_df %>% 
+  filter(snow > 0 & snow < 100) %>% 
+  ggplot(aes(x = year, y = snow, fill = year)) +
+  geom_boxplot(alpha = 0.3) +
+  theme(axis.text.x = element_text(angle = 85, hjust = 1, size = 8),
+        legend.position = "none")
+
+ggplotly(my_boxplot)
+```
+
+### Chart C
+
+```{r}
+hex = ggplot(ny_noaa_df, aes(x = tmin, y = tmax)) +
+  geom_hex(aes()) +
+  theme(axis.text.x = element_text(angle = 85, hjust = 1, size = 8),
+      legend.position = "none")
+
+ggplotly(hex)
+```
+
